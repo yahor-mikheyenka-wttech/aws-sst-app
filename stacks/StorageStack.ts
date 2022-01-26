@@ -1,5 +1,4 @@
 import * as sst from "@serverless-stack/resources";
-import { StackProps } from "aws-cdk-lib";
 import { Construct } from "constructs";
 
 export default class StorageStack extends sst.Stack {
@@ -9,7 +8,7 @@ export default class StorageStack extends sst.Stack {
   // Public reference to the table
   table;
 
-  constructor(scope: Construct, id: string, props: StackProps | undefined) {
+  constructor(scope: Construct, id: string, props?: never) {
     super(scope, id, props);
 
 		// Create an S3 bucket
