@@ -1,13 +1,11 @@
-import MyStack from "./MyStack";
-import * as sst from "@serverless-stack/resources";
+import StorageStack from "./StorageStack";
+import ApiStack from "./ApiStack";
+import { Construct } from "constructs";
 
-export default function main(app: sst.App): void {
-  // Set default runtime for all functions
-  app.setDefaultFunctionProps({
-    runtime: "nodejs14.x"
+export default function main(app: Construct) {
+  const storageStack = new StorageStack(app, "storage-ym");
+
+  new ApiStack(app, "api-ym", {
+    table: storageStack.table,
   });
-
-  new MyStack(app, "my-stack");
-
-  // Add more stacks
 }
