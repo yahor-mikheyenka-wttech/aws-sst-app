@@ -40,6 +40,14 @@ Learn more about the Serverless Stack.
 - [@serverless-stack/cli](https://docs.serverless-stack.com/packages/cli)
 - [@serverless-stack/resources](https://docs.serverless-stack.com/packages/resources)
 
-## Community
+## Codebase with PRs
 
-[Follow us on Twitter](https://twitter.com/ServerlessStack) or [post on our forums](https://discourse.serverless-stack.com).
+### Init branch - main
+### Main branch - master
+
+1. Create crud API - branch `sst-dynamo-db-table` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/sst-dynamo-db-table]
+
+2. Create User Authorization `ftr/user-auth` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/user-auth]
+
+3. Connect with third party API `ftr/secrets-stripe` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/secrets-stripe]
+
