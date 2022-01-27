@@ -51,3 +51,4 @@ Learn more about the Serverless Stack.
 
 3. Connect with third party API `ftr/secrets-stripe` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/secrets-stripe]
 
+4. Adding unit tests `ftr/unit-tests` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/unit-tests]
