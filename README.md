@@ -54,3 +54,5 @@ Learn more about the Serverless Stack.
 4. Adding unit tests `ftr/unit-tests` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/unit-tests]
 
 5. CORS for S3 `ftr/cors-s3` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/cors-s3]
+
+6. Setting up React app `ftr/setup-react` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/setup-react]
