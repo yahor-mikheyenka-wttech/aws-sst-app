@@ -12,17 +12,22 @@ export default class ApiStack extends sst.Stack {
 
     // Create the API
     this.api = new sst.Api(this, "Api", {
+			defaultAuthorizationType: "AWS_IAM",
       defaultFunctionProps: {
         environment: {
           TABLE_NAME: table.tableName,
+					STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
         },
       },
       routes: {
+				// CRUD
 				"GET    /notes/{id}": "src/get.main",
-				"PUT    /notes/{id}": "src/update.main",
-				"DELETE /notes/{id}": "src/delete.main",
 				"GET    /notes": "src/list.main",
+				"PUT    /notes/{id}": "src/update.main",
         "POST   /notes": "src/create.main",
+				"DELETE /notes/{id}": "src/delete.main",
+				// stripe api
+				"POST   /billing": "src/billing.main",
       },
     });
 
