@@ -1,6 +1,6 @@
 import './Home.css';
 
-export default function Home() {
+const Home = () => {
 	return (
 		<div className="Home">
 			<div className="lander">
@@ -9,4 +9,6 @@ export default function Home() {
 			</div>
 		</div>
 	);
-}
+};
+
+export default Home;
