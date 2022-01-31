@@ -63,4 +63,6 @@ Learn more about the Serverless Stack.
 
 9. Adding aws login & signup with redirections `ftr/adding-react-login-page` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/adding-react-login-page]
 
-10. Create/delete note added; Show all notes on home page `ftr/create-note` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/create-note]
+10. Add/delete note; Show all notes on home page `ftr/create-note` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/create-note]
+
+11. Add setting page; connect with billing form `ftr/settings-page` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/settings-page]

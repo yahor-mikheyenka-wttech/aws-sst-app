@@ -6,6 +6,7 @@ import Login from './containers/Login';
 import Signup from './containers/Signup';
 import NewNote from './containers/NewNote';
 import Notes from './containers/Notes';
+import Settings from './containers/Settings';
 
 const Routes = () => {
 	return (
@@ -13,8 +14,9 @@ const Routes = () => {
 			<Route exact path="/" component={Home} />
 			<Route exact path="/login" component={Login} />
 			<Route exact path="/signup" component={Signup} />
-			<Route exact path="/notes/new" component={NewNote}/>
-			<Route exact path="/notes/:id" component={Notes}/>
+			<Route exact path="/notes/new" component={NewNote} />
+			<Route exact path="/notes/:id" component={Notes} />
+			<Route exact path="/settings" component={Settings} />
 			<Route component={NotFound} />
 		</Switch>
 	);
