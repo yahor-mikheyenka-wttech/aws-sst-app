@@ -68,3 +68,5 @@ Learn more about the Serverless Stack.
 11. Add setting page; connect with billing form `ftr/settings-page` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/settings-page]
 
 12. Redirecting if unauthorized `ftr/secure-pages` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/secure-pages]
+
+13. Custom domain setup `ftr/custom-domain` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/custom-domain]

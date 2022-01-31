@@ -1,13 +1,6 @@
-import { SamlConsolePrincipal } from 'aws-cdk-lib/aws-iam';
-import React, { cloneElement, useContext } from 'react';
+import React, { useContext } from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import AppContext from '../lib/appContext';
-
-interface AuthProps {
-	exact: boolean;
-	path: string;
-	component: any;
-}
 
 const querystring = (name: string, url = window.location.href) => {
 	const parsedName = name.replace(/[[]]/g, '\\$&');
