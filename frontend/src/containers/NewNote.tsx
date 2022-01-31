@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import { useHistory } from 'react-router-dom';
 import LoaderButton from '../components/LoaderButton';
 import onError from '../lib/onError';
+import s3Upload from '../lib/s3Upload';
 import { API } from 'aws-amplify';
 import config from '../config';
 import './NewNote.css';
@@ -36,15 +37,17 @@ export default function NewNote() {
 		setIsLoading(true);
 
 		try {
-			await createNote({ content });
-			history.push('/');
+			const attachment = file.current ? await s3Upload(file.current) : null;
+	
+			await createNote({ content, attachment });
+			history.push("/");
 		} catch (e) {
 			onError(e);
 			setIsLoading(false);
 		}
 	};
 
-	const createNote = (note: { content: string; }) => {
+	const createNote = (note: { content: string; attachment: string | null; }) => {
 		return API.post('notes', '/notes', {
 			body: note
 		});

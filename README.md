@@ -60,3 +60,5 @@ Learn more about the Serverless Stack.
 7. Setting up React router `ftr/react-router` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/react-router]
 
 8. Adding aws amplify `ftr/aws-amplify` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/aws-amplify]
+
+8. Adding aws login & signup with redirections `ftr/adding-react-login-page` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/adding-react-login-page]
