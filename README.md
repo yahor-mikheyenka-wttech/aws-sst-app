@@ -66,3 +66,5 @@ Learn more about the Serverless Stack.
 10. Add/delete note; Show all notes on home page `ftr/create-note` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/create-note]
 
 11. Add setting page; connect with billing form `ftr/settings-page` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/settings-page]
+
+12. Redirecting if unauthorized `ftr/secure-pages` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/secure-pages]
