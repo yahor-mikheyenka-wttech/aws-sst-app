@@ -3,13 +3,11 @@ import Form from 'react-bootstrap/Form';
 import './Login.css';
 import { Auth } from 'aws-amplify';
 import AppContext from '../lib/appContext';
-import { useHistory } from 'react-router-dom';
 import LoaderButton from './../components/LoaderButton';
 import onError from '../lib/onError';
 import useFormFields from '../lib/useFormFields';
 
 const Login = () => {
-	const history = useHistory();
 	const { setIsAuthenticated } = useContext(AppContext);
 	const [isLoading, setIsLoading] = useState(false);
 	const [fields, setFields] = useFormFields({
@@ -29,7 +27,6 @@ const Login = () => {
 		try {
 			await Auth.signIn(fields.email, fields.password);
 			setIsAuthenticated(true);
-			history.push('/');
 		} catch (e) {
 			onError(e);
 			setIsLoading(false);
