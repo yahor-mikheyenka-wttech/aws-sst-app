@@ -61,4 +61,6 @@ Learn more about the Serverless Stack.
 
 8. Adding aws amplify `ftr/aws-amplify` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/aws-amplify]
 
-8. Adding aws login & signup with redirections `ftr/adding-react-login-page` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/adding-react-login-page]
+9. Adding aws login & signup with redirections `ftr/adding-react-login-page` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/adding-react-login-page]
+
+10. Create/delete note added; Show all notes on home page `ftr/create-note` [https://github.com/yahor-mikheyenka-wttech/aws-sst-app/tree/ftr/create-note]
